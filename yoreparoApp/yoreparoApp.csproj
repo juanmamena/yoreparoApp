@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
+    <PackageReference Include="Xam.Plugin.Geolocator" Version="4.5.0.6" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="2.88.0" />
+    <PackageReference Include="Prism.DryIoc.Forms" Version="8.1.97" />
+    <PackageReference Include="Sharpnado.Presentation.Forms" Version="1.7.1" />
+    <PackageReference Include="Sharpnado.TaskLoaderView" Version="2.4.0" />
+    <PackageReference Include="Sharpnado.TaskMonitor" Version="1.0.2" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.2401" />
+    <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="3.3.0" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.2.0.564" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Update="Views\LoginPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LoginPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\NavPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Plugin.Permissions" />
+    <None Remove="Xam.Plugin.Geolocator" />
+    <None Remove="Controls\" />
+    <None Remove="Models\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Views\" />
+    <None Remove="PropertyChanged.Fody" />
+    <None Remove="SkiaSharp.Views.Forms" />
+    <None Remove="Prism.DryIoc.Forms" />
+    <None Remove="Sharpnado.Presentation.Forms" />
+    <None Remove="Sharpnado.TaskLoaderView" />
+    <None Remove="Sharpnado.TaskMonitor" />
+    <None Remove="Xamarin.FFImageLoading.Forms" />
+    <None Remove="Xamarin.FFImageLoading.Transformations" />
+    <None Remove="Xamarin.Forms.PancakeView" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Xamarin.Forms.Maps" />
+    <None Remove="Xamarin.Forms.GoogleMaps" />
+    <None Remove="Acr.UserDialogs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\LoginPage1.xaml.cs">
+      <DependentUpon>LoginPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\LoginPage2.xaml.cs">
+      <DependentUpon>LoginPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\NavPage.xaml.cs">
+      <DependentUpon>NavPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+</Project>

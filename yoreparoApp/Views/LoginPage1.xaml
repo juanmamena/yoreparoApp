@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="yoreparoApp.Views.LoginPage1"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="http://prismlibrary.com"
+    xmlns:controls="clr-namespace:yoreparoApp.Controls"
+    Title="Inicio de Sesión"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    BackgroundColor="#084B8A" NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+    <Grid Padding="20" RowSpacing="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Image
+            Grid.RowSpan="4"
+            Margin="-21"
+            Aspect="AspectFill"
+            HorizontalOptions="FillAndExpand"
+            Source="loginhuacachina.jpg" />
+
+        <Image
+            Grid.Row="0"
+            Margin="70,70,70,100"
+            HeightRequest="200"
+            HorizontalOptions="Center"
+            Source="logo.png"
+            WidthRequest="200" />
+
+        <Label
+            Grid.Row="1"
+            FontAttributes="Bold"
+            FontSize="Title"
+            Text="INICIO DE SESIÓN"
+            TextColor="White" />
+
+        <controls:StandardEntry
+            Grid.Row="2"
+            Padding="13"
+            BackgroundColor="#31FFFFFF"
+            BorderColor="White"
+            BorderThickness="1"
+            CornerRadius="8"
+            Placeholder="Usuario"
+            PlaceholderColor="White"
+            TextColor="White"
+            x:Name="txtUsuario"/>
+
+        <controls:StandardEntry
+            Grid.Row="3"
+            Margin="0,0,0,20"
+            Padding="13"
+            BackgroundColor="#31FFFFFF"
+            BorderColor="White"
+            BorderThickness="1"
+            CornerRadius="8"
+            IsPassword="True"
+            Placeholder="Contraseña"
+            PlaceholderColor="White"
+            TextColor="White"
+            x:Name="txtContrasena"/>
+
+        <Button
+            Grid.Row="4"
+            BackgroundColor="White"
+            CornerRadius="8"
+            Text="Iniciar sesión"
+            TextColor="#084B8A"
+            TranslationY="-20"
+            FontAttributes="Bold"
+            x:Name="btnIniciarSesion"
+            x:Uid="btnIniciarSesion"
+            Clicked="btnIniciarSesion_Clicked"/>
+
+         <Button
+            Grid.Row="5"
+            BackgroundColor="White"
+            CornerRadius="8"
+            Text="Registrarme"
+            TextColor="#084B8A"
+            TranslationY="-20"
+            FontAttributes="Bold"
+            x:Name="btnRegistrarme"
+            x:Uid="btnRegistrarme"
+             Clicked="btnRegistrarme_Clicked"/>
+    </Grid>
+   </ScrollView>
+</ContentPage>

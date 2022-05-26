@@ -1,0 +1,26 @@
+Below exception occurred in AddControlRendererLine method:
+System.InvalidCastException: Specified cast is not valid.
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddControlRendererLine (MonoDevelop.Projects.Solution selectedSolution, System.Xml.Linq.XElement selectedPageItemTemplateElement, System.Xml.Linq.XElement selectedPageResourceElement) [0x000dd] in <1c78a777697b4b439cc734d4ef6887a3>:0 Below exception occurred in AddItemPage method:
+System.InvalidCastException: Specified cast is not valid.
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddResorceFiles (MonoDevelop.Projects.Solution selectedSolution, System.String[] files) [0x00014] in <1c78a777697b4b439cc734d4ef6887a3>:0 
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddItemPage (MonoDevelop.Projects.DotNetProject selectedProject, MonoDevelop.Projects.Solution selectedSolution) [0x00554] in <1c78a777697b4b439cc734d4ef6887a3>:0 Below exception occurred in AddControlRendererLine method:
+System.InvalidCastException: Specified cast is not valid.
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddControlRendererLine (MonoDevelop.Projects.Solution selectedSolution, System.Xml.Linq.XElement selectedPageItemTemplateElement, System.Xml.Linq.XElement selectedPageResourceElement) [0x000dd] in <1c78a777697b4b439cc734d4ef6887a3>:0 Below exception occurred in AddItemPage method:
+System.InvalidCastException: Specified cast is not valid.
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddResorceFiles (MonoDevelop.Projects.Solution selectedSolution, System.String[] files) [0x00014] in <1c78a777697b4b439cc734d4ef6887a3>:0 
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddItemPage (MonoDevelop.Projects.DotNetProject selectedProject, MonoDevelop.Projects.Solution selectedSolution) [0x00554] in <1c78a777697b4b439cc734d4ef6887a3>:0 Below exception occurred in AddControlRendererLine method:
+System.InvalidCastException: Specified cast is not valid.
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddControlRendererLine (MonoDevelop.Projects.Solution selectedSolution, System.Xml.Linq.XElement selectedPageItemTemplateElement, System.Xml.Linq.XElement selectedPageResourceElement) [0x000dd] in <1c78a777697b4b439cc734d4ef6887a3>:0 Below exception occurred in AddItemPage method:
+System.InvalidCastException: Specified cast is not valid.
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddResorceFiles (MonoDevelop.Projects.Solution selectedSolution, System.String[] files) [0x00014] in <1c78a777697b4b439cc734d4ef6887a3>:0 
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddItemPage (MonoDevelop.Projects.DotNetProject selectedProject, MonoDevelop.Projects.Solution selectedSolution) [0x00554] in <1c78a777697b4b439cc734d4ef6887a3>:0 Below exception occurred in AddControlRendererLine method:
+System.InvalidCastException: Specified cast is not valid.
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddControlRendererLine (MonoDevelop.Projects.Solution selectedSolution, System.Xml.Linq.XElement selectedPageItemTemplateElement, System.Xml.Linq.XElement selectedPageResourceElement) [0x000dd] in <1c78a777697b4b439cc734d4ef6887a3>:0 Below exception occurred in AddItemPage method:
+System.InvalidCastException: Specified cast is not valid.
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddResorceFiles (MonoDevelop.Projects.Solution selectedSolution, System.String[] files) [0x00014] in <1c78a777697b4b439cc734d4ef6887a3>:0 
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddItemPage (MonoDevelop.Projects.DotNetProject selectedProject, MonoDevelop.Projects.Solution selectedSolution) [0x00554] in <1c78a777697b4b439cc734d4ef6887a3>:0 Below exception occurred in AddControlRendererLine method:
+System.InvalidCastException: Specified cast is not valid.
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddControlRendererLine (MonoDevelop.Projects.Solution selectedSolution, System.Xml.Linq.XElement selectedPageItemTemplateElement, System.Xml.Linq.XElement selectedPageResourceElement) [0x000dd] in <1c78a777697b4b439cc734d4ef6887a3>:0 Below exception occurred in AddItemPage method:
+System.InvalidCastException: Specified cast is not valid.
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddResorceFiles (MonoDevelop.Projects.Solution selectedSolution, System.String[] files) [0x00014] in <1c78a777697b4b439cc734d4ef6887a3>:0 
+  at Syncfusion.Xamarin.Mac.UIKit.ProjectOperations.AddItemPage (MonoDevelop.Projects.DotNetProject selectedProject, MonoDevelop.Projects.Solution selectedSolution) [0x00554] in <1c78a777697b4b439cc734d4ef6887a3>:0 

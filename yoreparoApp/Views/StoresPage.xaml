@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="yoreparoApp.Views.StoresPage" BackgroundImageSource="FondoPrincipal.jpg" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" 
+                                        Value="LightSkyBlue" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Frame BackgroundColor="White" Padding="1" CornerRadius="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+
+                </Grid.RowDefinitions>
+                <Image Grid.Column="0" Grid.Row="0"   Source="logo1.png" HorizontalOptions="Start" VerticalOptions="Center" HeightRequest="100"/>
+                <Label Grid.Column="1" Grid.Row="0"  x:Name="lblUsuario" x:Uid="lblUsuario" Text="!Hola! Usuario" HorizontalOptions="EndAndExpand" VerticalOptions="Center" FontAttributes="Bold" FontSize="Title"/>
+            </Grid>
+        </Frame>
+
+
+        <Label x:Name="lblCategoriaSeleccionada" BackgroundColor="White"/>
+        <CollectionView  x:Name="listStores"
+                        SelectionMode="Single"
+                        SelectionChanged="CollectionView_SelectionChanged" BackgroundColor="White" >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" 
+                               Source="{Binding logo}" 
+                               Aspect="AspectFill"
+                               HeightRequest="60" 
+                               WidthRequest="60" />
+                        <Label Grid.Column="1" 
+                               Text="{Binding name}" 
+                               FontAttributes="Bold" />
+                        <Label Grid.Row="1"
+                               Grid.Column="1" 
+                               Text="{Binding description}"
+                               FontAttributes="Italic" 
+                               VerticalOptions="End" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button
+            BackgroundColor="White"
+            CornerRadius="8"
+            Text="Ver Categorias"
+            TextColor="#084B8A"
+            TranslationY="-20"
+            FontAttributes="Bold"
+            x:Name="btnRegresar"
+            x:Uid="btnRegresar"
+            Clicked="btnRegresar_Clicked"/>
+
+        <Button
+            BackgroundColor="White"
+            CornerRadius="8"
+            Text="Cerrar Sesion"
+            TextColor="#084B8A"
+            TranslationY="-20"
+            FontAttributes="Bold"
+            x:Name="btnCerrarSesion"
+            x:Uid="btnCerrarSesion"
+            Clicked="btnCerrarSesion_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>

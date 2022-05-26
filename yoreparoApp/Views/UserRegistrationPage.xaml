@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="yoreparoApp.Views.UserRegistrationPage"
+     xmlns:prism="http://prismlibrary.com"
+    xmlns:controls="clr-namespace:yoreparoApp.Controls"
+    Title="Registro"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    BackgroundColor="#084B8A" NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <ScrollView>
+            <Grid Padding="20" RowSpacing="20">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+            <Image
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="7"
+            Margin="-21"
+            Aspect="AspectFill"
+            HorizontalOptions="FillAndExpand"
+            Source="loginhuacachina.jpg" />
+
+            <Label
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            FontAttributes="Bold"
+            FontSize="Title"
+            Text="REGISTRO DE NUEVO USUARIO"
+            TextColor="White" />
+
+
+            <controls:StandardEntry
+            Grid.ColumnSpan="2"
+            Grid.Row="2"
+            Padding="13"
+            BackgroundColor="#31FFFFFF"
+            BorderColor="White"
+            BorderThickness="1"
+            CornerRadius="8"
+            Placeholder="Nombres"
+            PlaceholderColor="White"
+            TextColor="White"
+            x:Name="txtNombre"/>
+
+            <controls:StandardEntry
+            Grid.ColumnSpan="2"
+            Grid.Row="3"
+            Margin="0,0,0,20"
+            Padding="13"
+            BackgroundColor="#31FFFFFF"
+            BorderColor="White"
+            BorderThickness="1"
+            CornerRadius="8"
+            Placeholder="Apellidos"
+            PlaceholderColor="White"
+            TextColor="White"
+            x:Name="txtApellidos"/>
+
+            <controls:StandardEntry
+            Grid.Column="0"
+            Grid.Row="1"
+            Margin="0,0,0,20"
+            Padding="13"
+            BackgroundColor="#31FFFFFF"
+            BorderColor="White"
+            BorderThickness="1"
+            CornerRadius="8"
+            Placeholder="Confirme su ubicación"
+            PlaceholderColor="White"
+            TextColor="White"
+            IsEnabled="False"
+            x:Name="txtUbicacion"/>
+            <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="White"
+            CornerRadius="8"
+            Text="Ver"
+            TextColor="#084B8A"
+            TranslationY="-20"
+            FontAttributes="Bold"
+            x:Name="btnVer"
+            x:Uid="btnVer"
+             Clicked="btnVer_Clicked"/>
+
+            <controls:StandardEntry
+            Grid.ColumnSpan="2"
+            Grid.Row="4"
+            Margin="0,0,0,20"
+            Padding="13"
+            BackgroundColor="#31FFFFFF"
+            BorderColor="White"
+            BorderThickness="1"
+            CornerRadius="8"
+            Placeholder="Correo electrónico"
+            PlaceholderColor="White"
+            TextColor="White"
+            Keyboard="Email"
+            x:Name="txtCorreo"/>
+
+            <controls:StandardEntry
+            Grid.ColumnSpan="2"
+            Grid.Row="5"
+            Margin="0,0,0,20"
+            Padding="13"
+            BackgroundColor="#31FFFFFF"
+            BorderColor="White"
+            BorderThickness="1"
+            CornerRadius="8"
+            Placeholder="Contraseña"
+            PlaceholderColor="White"
+            TextColor="White"
+            Keyboard="Email"
+            x:Name="txtPassword1"/>
+
+            <controls:StandardEntry
+            Grid.ColumnSpan="2"
+            Grid.Row="6"
+            Margin="0,0,0,20"
+            Padding="13"
+            BackgroundColor="#31FFFFFF"
+            BorderColor="White"
+            BorderThickness="1"
+            CornerRadius="8"
+            Placeholder="Confirmar contraseña"
+            PlaceholderColor="White"
+            TextColor="White"
+            IsPassword="True"
+            x:Name="txtPassword2"/>
+
+            <Button
+            Grid.ColumnSpan="2"
+            Grid.Row="7"
+            BackgroundColor="White"
+            CornerRadius="8"
+            Text="Aceptar"
+            TextColor="#084B8A"
+            TranslationY="-20"
+            FontAttributes="Bold"
+            x:Name="btnAceptar"
+            x:Uid="btnAceptar"
+            Clicked="btnAceptar_Clicked"/>
+
+            <Button
+            Grid.Row="8"
+            Grid.ColumnSpan="2"
+            BackgroundColor="White"
+            CornerRadius="8"
+            Text="Cancelar"
+            TextColor="#084B8A"
+            TranslationY="-20"
+            FontAttributes="Bold"
+            x:Name="btnCancelar"
+            x:Uid="btnCancelar"
+             Clicked="btnCancelar_Clicked"/>
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="yoreparoApp.Views.CategoriesPage" BackgroundImageSource="FondoPrincipal.jpg" NavigationPage.HasNavigationBar="False">
+
+     <ContentPage.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" 
+                                        Value="LightSkyBlue" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+    <StackLayout>
+
+        <Frame BackgroundColor="White" Padding="1" CornerRadius="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                           <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+    
+                        </Grid.RowDefinitions>
+                <Image Grid.Column="0" Grid.Row="0"   Source="logo1.png" HorizontalOptions="Start" VerticalOptions="Center" HeightRequest="100"/>
+                <Label Grid.Column="1" Grid.Row="0"  x:Name="lblUsuario" x:Uid="lblUsuario" Text="!Hola! Usuario" HorizontalOptions="EndAndExpand" VerticalOptions="Center" FontAttributes="Bold" FontSize="Title"/>
+            </Grid>
+                
+        </Frame>
+    <CollectionView x:Name="listCategories"
+                    Margin="15"
+                    SelectionMode="Single"
+                    SelectionChanged="listCategories_SelectionChanged">
+        <CollectionView.ItemsLayout>
+       <GridItemsLayout Orientation="Vertical"
+                        Span="2" />
+    </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame Padding="5"
+                      CornerRadius="5"
+                      IsClippedToBounds="False">
+                    <Grid HeightRequest="100">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".3*"/>
+                            <ColumnDefinition Width=".7*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height=".56*"/>
+                            <RowDefinition Height=".10*"/>
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0"
+                               Grid.ColumnSpan="2"
+                              Source="{Binding image}"
+                               VerticalOptions="Center"/>
+                        <Label Grid.Row="1"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
+                               FontAttributes="Bold"
+                               FontSize="Small"
+                               HorizontalTextAlignment="Center"
+                               Text="{Binding description}"
+                               />
+                        <!--<Label Grid.Row="1"
+                               Grid.Column="1"
+                               FontAttributes="Bold"
+                               FontSize="Medium"
+                               Text="{Binding Price, StringFormat='{0:C}'}"
+                               />-->
+                    </Grid>
+
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+         <Button
+            Grid.Row="8"
+            Grid.ColumnSpan="2"
+            BackgroundColor="White"
+            CornerRadius="8"
+            Text="Cerrar Sesion"
+            TextColor="#084B8A"
+            TranslationY="-20"
+            FontAttributes="Bold"
+            x:Name="btnCerrarSesion"
+            x:Uid="btnCerrarSesion"
+            Clicked="btnCerrarSesion_Clicked"/>
+    </StackLayout>
+</ContentPage>
